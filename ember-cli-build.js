@@ -3,7 +3,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    'ember-cli-bootswatch': 'cyborg'
+    'ember-cli-bootswatch': 'flatly'
   });
 
   // Use `app.import` to add additional libraries to the generated
