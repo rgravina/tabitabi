@@ -1,5 +1,5 @@
 export default Ember.Route.extend({
-  beforeModel() {
+  /*beforeModel() {
     this.transitionTo('home');
-  }
+  }*/
 });
