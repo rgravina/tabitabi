@@ -19,7 +19,22 @@
           </button>
         </div>
       </div>
-      <br/>
+      <div class="row text-center">
+        <div class="col-sm-12">
+          <a href="#" {{action 'toggleShowWhyLogin'}}>Why login?</a>
+        </div>
+      </div>
+      {{#if showWhyLogin}}
+      <div class="row text-center">
+        <div class="col-sm-12">
+          <div class="well">
+            Logging in allows you use the same account on the web and mobile app and participate in discussions.
+          </div>
+        </div>
+      </div>
+      {{else}}
+        <br/>
+      {{/if}}
       <div class="row text-center">
         <div class="col-sm-12">
           <button href="#" class="btn btn-secondary btn-lg">
