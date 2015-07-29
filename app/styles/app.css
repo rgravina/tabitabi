@@ -6,3 +6,7 @@
 .jumbotron .well {
   background-color: white;
 }
+
+.jumbotron .buttons {
+  margin-bottom: 10px;
+}

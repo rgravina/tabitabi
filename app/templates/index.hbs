@@ -6,7 +6,7 @@
       <p>TabiTabi will help you increase your vocabulary and reading ability in Japanese.</p>
       <br/>
       <div class="row">
-        <div class="col-sm-6 text-center">
+        <div class="col-sm-6 text-center buttons">
           <button href="#" class="btn btn-primary btn-lg">
             {{fa-icon "facebook" size="lg"}}
             Login with Facebook
@@ -25,10 +25,15 @@
         </div>
       </div>
       {{#if showWhyLogin}}
-      <div class="row text-center">
+      <div class="row">
         <div class="col-sm-12">
           <div class="well">
-            Logging in allows you use the same account on the web and mobile app and participate in discussions.
+            <p class="text-center">Logging in allows you to:</p>
+            <ul>
+              <li>Keep using your account after you have cleared your browsers local storage.</li>
+              <li>Use the same account on the web and mobile app.</li>
+              <li>Participate in discussions.</li>
+            </ul>
           </div>
         </div>
       </div>
