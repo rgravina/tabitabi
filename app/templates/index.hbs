@@ -7,13 +7,13 @@
       <br/>
       <div class="row">
         <div class="col-sm-6 text-center buttons">
-          <button href="#" class="btn btn-primary btn-lg">
+          <button {{action "signIn" "facebook"}} href="#" class="btn btn-primary btn-lg">
             {{fa-icon "facebook" size="lg"}}
             Login with Facebook
           </button>
         </div>
         <div class="col-sm-6 text-center">
-          <button href="#" class="btn btn-primary btn-lg">
+          <button {{action "signIn" "twitter"}} href="#" class="btn btn-primary btn-lg">
             {{fa-icon "twitter" size="lg"}}
             Login with Twitter
           </button>
