@@ -1,51 +1,18 @@
 <br/>
 <div class="row">
   <div class="col-sm-8 col-sm-offset-2">
-    <div class="jumbotron">
-      <p>Welcome to <strong>TabiTabi!</strong></p>
-      <p>TabiTabi will help you increase your vocabulary and reading ability in Japanese.</p>
-      <br/>
-      {{#if session.isAuthenticated}}
-      Logged in as {{session.currentUser.displayName}}
-      <button {{action "signOut"}}>Sign out</button>
-      {{else}}
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <button {{action "signIn" "github"}} href="#" class="btn btn-primary btn-lg">
-            {{fa-icon "github" size="lg"}}
-            Login with Github
-          </button>
-        </div>
+    {{#if session.isAuthenticated}}
+    Logged in as {{session.currentUser.displayName}}
+    <button {{action "signOut"}}>Sign out</button>
+    {{else}}
+    <div class="row">
+      <div class="col-sm-12 text-center login-button">
+        <button {{action "signIn" "github"}} href="#" class="btn btn-primary btn-lg">
+          {{fa-icon "github" size="lg"}}
+          Githubでログイン
+        </button>
       </div>
-      <div class="row text-center">
-        <div class="col-sm-12">
-          <a href="#" {{action 'toggleShowWhyLogin'}}>Why login?</a>
-        </div>
-      </div>
-      {{#if showWhyLogin}}
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="well">
-            <p class="text-center">Logging in allows you to:</p>
-            <ul>
-              <li>Keep using your account after you have cleared your browsers local storage.</li>
-              <li>Use the same account on the web and mobile app.</li>
-              <li>Participate in discussions.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      {{else}}
-        <br/>
-      {{/if}}
-      <div class="row text-center">
-        <div class="col-sm-12">
-          <button href="#" class="btn btn-secondary btn-lg">
-            No, thanks. Just let me in.
-          </button>
-        </div>
-      </div>
-      {{/if}}
     </div>
+    {{/if}}
   </div>
 </div>

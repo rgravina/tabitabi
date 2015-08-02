@@ -10,3 +10,7 @@
 .jumbotron .buttons {
   margin-bottom: 10px;
 }
+
+.login-button {
+  top: calc(50vh - 54px);
+}
