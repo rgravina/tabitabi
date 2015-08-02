@@ -5,17 +5,15 @@
       <p>Welcome to <strong>TabiTabi!</strong></p>
       <p>TabiTabi will help you increase your vocabulary and reading ability in Japanese.</p>
       <br/>
+      {{#if session.isAuthenticated}}
+      Logged in as {{session.currentUser.displayName}}
+      <button {{action "signOut"}}>Sign out</button>
+      {{else}}
       <div class="row">
-        <div class="col-sm-6 text-center buttons">
-          <button href="#" class="btn btn-primary btn-lg">
-            {{fa-icon "facebook" size="lg"}}
-            Login with Facebook
-          </button>
-        </div>
-        <div class="col-sm-6 text-center">
-          <button href="#" class="btn btn-primary btn-lg">
-            {{fa-icon "twitter" size="lg"}}
-            Login with Twitter
+        <div class="col-sm-12 text-center">
+          <button {{action "signIn" "github"}} href="#" class="btn btn-primary btn-lg">
+            {{fa-icon "github" size="lg"}}
+            Login with Github
           </button>
         </div>
       </div>
@@ -47,6 +45,7 @@
           </button>
         </div>
       </div>
+      {{/if}}
     </div>
   </div>
 </div>
