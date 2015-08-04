@@ -17,3 +17,8 @@
 .nav .fa-user {
   padding-right: 5px;
 }
+
+.document p {
+  font-size: 3vmin;
+  padding-top: 0.2em;
+}
