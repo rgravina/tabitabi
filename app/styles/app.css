@@ -17,7 +17,15 @@
 .nav .fa-user {
   padding-right: 5px;
 }
+.navbar-default .navbar-brand {
+  font-size: 30px;
+  color: #2a9fd6;
+}
 
+.navbar-default .navbar-brand:hover{
+  cursor: pointer;
+  color: #2a9fd6;
+}
 .document p {
   font-size: 3vmin;
   padding-top: 0.2em;
